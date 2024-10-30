@@ -20,17 +20,35 @@ This lab stands to prepare the moderngl development environment. Below the steps
 
 ## How to run your program
 
-```
-# Update this section with instructions on how to run your programs. 
+# Instrucciones para Ejecutar Archivos
 
-# Consider that these instructions will be executed 
-in a completely new linux-based machine (Ubuntu 22.04),
-so, instructions for dependencies installation must be added.
+## Requisitos Previos
 
-# It's highly recommended to use python virtual envs. 
-You may take a look on:
-https://docs.python.org/3/library/venv.html
-```
+- **Python 3** Instalado.
+- **Pip** para instalar las dependencias de Python.
+
+## Configuración del Entorno Virtual
+
+1. **Clonar el proyecto** y navegar a la carpeta principal del proyecto:
+
+   git clone https://github.com/CodersSquad/cg-booting-up-di3g0r
+
+2. **Crear y activar Entorno Virtual**
+
+    - python -m venv myenv
+    - myenv\Scripts\activate
+
+3. **Instlar dependencias**
+
+    pip install numpy pygame pillow moderngl pyglm objloader
+
+4. **Ejecutar programas**
+
+    Para ejecutar cada programa se llama:
+    - python 01_hello_world.py 
+    - python 06_multiple_objects.py
+    - python 09_models_and_images.py 
+
 
 ## Grading Policy
 

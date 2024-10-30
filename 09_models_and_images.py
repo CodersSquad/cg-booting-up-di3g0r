@@ -5,7 +5,7 @@ import sys
 import glm
 import moderngl
 import pygame
-from objloader import Obj
+from objloader import Obj   
 from PIL import Image
 
 os.environ['SDL_WINDOWS_DPI_AWARENESS'] = 'permonitorv2'
@@ -19,7 +19,8 @@ class ImageTexture:
         self.ctx = moderngl.get_context()
 
         img = Image.open(path).convert('RGBA')
-        self.texture = self.ctx.texture(img.size, 4, img.tobytes())
+        img = img.transpose(Image.FLIP_TOP_BOTTOM)  #Rotate the image
+        self.texture = self.ctx.texture(img.size, 4, img.tobytes())  
         self.sampler = self.ctx.sampler(texture=self.texture)
 
     def use(self):
@@ -106,7 +107,7 @@ class Scene:
             ''',
         )
 
-        self.texture = ImageTexture('examples/data/textures/crate.png')
+        self.texture = ImageTexture('examples/data/textures/itesm.jpg')
 
         self.car_geometry = ModelGeometry('examples/data/models/lowpoly_toy_car.obj')
         self.car = Mesh(self.program, self.car_geometry)
