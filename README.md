@@ -35,12 +35,12 @@ This lab stands to prepare the moderngl development environment. Below the steps
 
 2. **Crear y activar Entorno Virtual**
 
-    En este caso el entorno virtual ya esta creado, solo se tendria que activar
+    En este caso el entorno virtual ya esta creado, solo se tendria que activar (2da linea)
 
     - python -m venv myenv
     - myenv\Scripts\activate
 
-3. **Instlar dependencias**
+3. **Instalar dependencias**
 
     pip install numpy pygame pillow moderngl pyglm objloader
 
