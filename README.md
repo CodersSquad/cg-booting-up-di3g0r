@@ -35,6 +35,8 @@ This lab stands to prepare the moderngl development environment. Below the steps
 
 2. **Crear y activar Entorno Virtual**
 
+    En este caso el entorno virtual ya esta creado, solo se tendria que activar
+
     - python -m venv myenv
     - myenv\Scripts\activate
 
